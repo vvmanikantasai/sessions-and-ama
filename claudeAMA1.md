@@ -1,28 +1,28 @@
 # Claude AMA1
 
 ## Q1. What is RAG?
-**Answer:** RAG (Retrieval-Augmented Generation) lets Claude search documents before answering. This helps it give more correct and updated answers.
+**Answer:** RAG (Retrieval-Augmented Generation) lets Claude search documents or a knowledge base before answering. This helps it give more accurate and updated answers.
 
-## Q2. Explain the Claude model family.
-**Answer:** Haiku is fast and low cost. Sonnet is good for most tasks. Opus is better for hard tasks. Fable is the most powerful model.
+## Q2. What are the components of the MCP model?
+**Answer:** The main components are the **Host**, **Client**, and **Server**. The Host runs the AI, the Client connects to servers, and the Server provides tools or data.
 
-## Q3. What is the purpose of Plan Mode?
-**Answer:** Plan Mode helps Claude make a step-by-step plan before doing the task. It helps solve complex problems more clearly.
+## Q3. What are the different models in the Claude family?
+**Answer:** The Claude family has **Haiku**, **Sonnet**, **Opus**, and **Fable**. Haiku is the fastest, Sonnet is best for most tasks, Opus is for difficult tasks, and Fable is the most powerful.
 
-## Q4. What is a hook?
-**Answer:** A hook is a function that runs automatically when a specific event happens.
+## Q4. What is the purpose of using Plan Mode?
+**Answer:** Plan Mode helps Claude think before doing a task. It breaks a big task into small steps and creates a clear plan.
 
-## Q5. What are the different types of hooks?
-**Answer:** The main types are Pre-hook (before an action), Post-hook (after an action), User Prompt Submit hook, Stop hook, and Notification hook.
+## Q5. What is MCP?
+**Answer:** MCP (Model Context Protocol) is a standard way for AI models to connect with tools, files, databases, and other applications.
 
 ## Q6. What are the different MCP transports?
-**Answer:** MCP uses STDIO for local communication, HTTP for web communication, and Streamable HTTP/SSE for real-time communication.
+**Answer:** MCP supports **STDIO**, **HTTP**, and **Streamable HTTP (SSE)**. These are different ways for the client and server to communicate.
 
 ## Q7. What is a subagent?
-**Answer:** A subagent is a helper agent. It does one specific job and gives the result back to the main agent.
+**Answer:** A subagent is a helper AI that handles one specific task. It finishes the task and sends the result back to the main agent.
 
-## Q8. What is the difference between CLAUDE.md and Rules?
-**Answer:** `CLAUDE.md` is used for project instructions. Rules are general instructions that Claude follows while working.
+## Q8. What is the difference between `CLAUDE.md` and Rules files?
+**Answer:** `CLAUDE.md` stores instructions for a specific project. Rules files contain general instructions that Claude follows while working.
 
-## Q9. What is the difference between a chatbot and an AI agent?
-**Answer:** A chatbot only answers questions. An AI agent can plan, use tools, remember information, and complete tasks by itself.
+## Q9. Why should we use MCP servers?
+**Answer:** MCP servers let Claude use external tools, read files, access databases, and perform actions. This makes Claude more useful than using only its built-in knowledge. Eg: Github.
